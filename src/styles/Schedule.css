@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+
+:root {
+  --purple-dark: #5a189a;
+  --purple-main: #7b2cbf;
+  --purple-light: #9d4edd;
+  --bg-light: #f5f0ff;
+}
+
+.dashboard-wrapper {
+  display: flex;
+  font-family: 'Nunito', sans-serif;
+  background-color: var(--bg-light);
+  min-height: 100vh;
+}
+
+.main-content {
+  margin-left: 240px;
+  padding: 32px 36px;
+  flex: 1;
+}
+
+/* HEADER */
+.sched-header {
+  margin-bottom: 28px;
+}
+
+.sched-title {
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--purple-dark);
+  margin: 0 0 4px;
+}
+
+.sched-subtitle {
+  color: #888;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* DAY SECTION */
+.sched-day-section {
+  margin-bottom: 18px;
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(123, 44, 191, 0.07);
+}
+
+.sched-day-header {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--purple-dark);
+  border-bottom: 1px solid #f3e8ff;
+  text-align: left;
+  transition: background 0.2s;
+}
+
+.sched-day-header:hover {
+  background: #faf5ff;
+}
+
+.sched-day-arrow {
+  font-size: 11px;
+  color: var(--purple-light);
+}
+
+.sched-day-name {
+  font-size: 15px;
+}
+
+/* DAY BODY */
+.sched-day-body {
+  padding: 4px 0;
+}
+
+/* ROW */
+.sched-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 12px 20px;
+  border-bottom: 1px solid #faf5ff;
+  transition: background 0.15s;
+}
+
+.sched-row:last-child {
+  border-bottom: none;
+}
+
+.sched-row:hover {
+  background: #faf5ff;
+}
+
+.sched-row-special {
+  background: linear-gradient(90deg, #fdf2ff, #f3e8ff) !important;
+}
+
+.sched-row-special:hover {
+  background: linear-gradient(90deg, #f9e8ff, #ede0ff) !important;
+}
+
+/* TIME */
+.sched-time-wrap {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 130px;
+}
+
+.sched-clock {
+  font-size: 14px;
+  color: #bbb;
+}
+
+.sched-time {
+  font-size: 12px;
+  color: #999;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* INFO */
+.sched-info {
+  flex: 1;
+}
+
+.sched-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: #2d2d2d;
+}
+
+.sched-teacher {
+  font-size: 12px;
+  color: #bbb;
+  margin-top: 2px;
+}
+
+/* TAGS */
+.sched-tag {
+  font-size: 12px;
+  font-weight: 700;
+  padding: 5px 14px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Nunito', sans-serif;
+  white-space: nowrap;
+  transition: opacity 0.2s;
+}
+
+.sched-tag:hover { opacity: 0.8; }
+
+.tag-green {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.tag-now {
+  background: linear-gradient(90deg, #f0abfc, #c084fc);
+  color: white;
+  box-shadow: 0 2px 8px rgba(192, 132, 252, 0.4);
+}
+
+.tag-edit {
+  background: #e0f2fe;
+  color: #2563eb;
+}

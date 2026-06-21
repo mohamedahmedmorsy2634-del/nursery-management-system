@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+
+:root {
+  --purple-dark: #5a189a;
+  --purple-main: #7b2cbf;
+  --purple-light: #9d4edd;
+  --bg-light: #f5f0ff;
+}
+
+.dashboard-wrapper {
+  display: flex;
+  font-family: 'Nunito', sans-serif;
+  background: var(--bg-light);
+  min-height: 100vh;
+}
+
+.main-content {
+  margin-left: 240px;
+  padding: 32px;
+  flex: 1;
+}
+
+/* HEADER */
+
+.attendance-header {
+  margin-bottom: 24px;
+}
+
+.attendance-title {
+  font-size: 30px;
+  font-weight: 800;
+  color: var(--purple-dark);
+  margin-bottom: 6px;
+}
+
+.attendance-subtitle {
+  color: #8f8f8f;
+  font-size: 14px;
+}
+
+/* GRID */
+
+.attendance-grid {
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  gap: 22px;
+  align-items: start;
+}
+
+/* CARD */
+
+.attendance-card,
+.summary-card {
+  background: white;
+  border-radius: 18px;
+  padding: 20px;
+  border: 1px solid #eadcff;
+  box-shadow: 0 2px 10px rgba(123, 44, 191, 0.05);
+}
+
+.summary-card {
+  margin-top: 18px;
+}
+
+.attendance-card-title {
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--purple-dark);
+  margin-bottom: 16px;
+}
+
+/* SCANNER */
+
+.scanner-box {
+  height: 560px;
+  border: 2px dashed #e6cfff;
+  border-radius: 16px;
+  background: #faf5ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.scanner-icon {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.scanner-text {
+  color: #9d4edd;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.scan-btn {
+  width: 100%;
+  margin-top: 14px;
+  border: none;
+  border-radius: 12px;
+  padding: 14px;
+  background: linear-gradient(
+    90deg,
+    #9d4edd,
+    #7b2cbf
+  );
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* SUMMARY */
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.present {
+  color: #16a34a;
+}
+
+.absent {
+  color: #ef4444;
+}
+
+/* RIGHT */
+
+.attendance-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.attendance-search {
+  width: 240px;
+  border: 1px solid #eadcff;
+  border-radius: 10px;
+  padding: 10px 14px;
+  outline: none;
+  font-family: 'Nunito', sans-serif;
+}
+
+/* LIST */
+
+.attendance-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.student-row {
+  border-radius: 14px;
+  padding: 14px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.student-present {
+  background: #f0fff4;
+  border: 1px solid #bbf7d0;
+}
+
+.student-absent {
+  background: #fff5f5;
+  border: 1px solid #fecaca;
+}
+
+.student-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.student-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.student-name {
+  font-size: 14px;
+  font-weight: 800;
+  color: #333;
+}
+
+.student-code {
+  font-size: 12px;
+  color: #999;
+  margin-top: 2px;
+}
+
+.student-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.student-time {
+  font-size: 12px;
+  color: #666;
+  font-weight: 700;
+}
+
+.student-badge {
+  padding: 5px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.badge-present {
+  background: #22c55e;
+  color: white;
+}
+
+.badge-absent {
+  background: #ef4444;
+  color: white;
+}

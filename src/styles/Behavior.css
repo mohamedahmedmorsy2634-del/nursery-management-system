@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+
+:root {
+  --purple-dark: #5a189a;
+  --purple-main: #7b2cbf;
+  --purple-light: #9d4edd;
+  --bg-light: #f5f0ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.dashboard-wrapper {
+  display: flex;
+  background: var(--bg-light);
+  min-height: 100vh;
+  font-family: 'Nunito', sans-serif;
+}
+
+.main-content {
+  margin-left: 240px;
+  padding: 32px;
+  flex: 1;
+}
+
+/* HEADER */
+
+.behavior-header {
+  margin-bottom: 24px;
+}
+
+.behavior-title {
+  font-size: 30px;
+  font-weight: 800;
+  color: var(--purple-dark);
+  margin-bottom: 6px;
+}
+
+.behavior-subtitle {
+  color: #888;
+  font-size: 14px;
+}
+
+/* GRID */
+
+.behavior-grid {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 18px;
+  align-items: start;
+}
+
+/* CARDS */
+
+.behavior-card,
+.recent-card {
+  background: white;
+  border-radius: 18px;
+  padding: 18px;
+  border: 1px solid #eadcff;
+  overflow: hidden;
+}
+.card-title {
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--purple-dark);
+  margin-bottom: 18px;
+}
+
+/* FORM */
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.behavior-input,
+.behavior-textarea {
+  width: 100%;
+  max-width: 100%;
+  border: 1px solid #e7d8ff;
+  border-radius: 12px;
+  padding: 12px 14px;
+  font-size: 14px;
+  font-family: 'Nunito', sans-serif;
+  background: #faf7ff;
+  outline: none;
+}
+
+.behavior-input:focus,
+.behavior-textarea:focus {
+  border-color: var(--purple-light);
+}
+
+.behavior-textarea {
+  min-height: 90px;
+  resize: none;
+}
+
+/* STARS */
+
+.stars {
+  display: flex;
+  gap: 6px;
+}
+
+.star {
+  font-size: 30px;
+  cursor: pointer;
+  opacity: 0.4;
+  transition: 0.2s;
+}
+
+.active-star {
+  opacity: 1;
+}
+
+/* TWO COLS */
+
+.behavior-two-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+/* UPLOAD */
+
+.upload-box {
+  border: 2px dashed #eadcff;
+  border-radius: 16px;
+  padding: 30px;
+  text-align: center;
+  color: #9d4edd;
+  margin-bottom: 20px;
+  background: #fcfaff;
+}
+
+.upload-icon {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+/* BUTTON */
+
+.submit-btn {
+  width: 100%;
+  border: none;
+  border-radius: 14px;
+  padding: 14px;
+  background: linear-gradient(90deg, #9d4edd, #7b2cbf);
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.submit-btn:hover {
+  opacity: 0.9;
+}
+
+/* RECENT */
+
+.recent-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.recent-item {
+  border: 1px solid #eadcff;
+  border-radius: 14px;
+  padding: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.recent-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: #333;
+}
+
+.recent-date {
+  font-size: 12px;
+  color: #999;
+  margin-top: 4px;
+}
+
+.recent-stars {
+  font-size: 14px;
+}

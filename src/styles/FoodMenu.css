@@ -1,0 +1,138 @@
+.food-page {
+  margin-left: 240px;
+  padding: 30px;
+  min-height: 100vh;
+  background: #f8f5ff;
+}
+
+.food-header h1 {
+  color: #5a189a;
+  margin-bottom: 8px;
+}
+
+.food-header p {
+  color: #777;
+  margin-bottom: 25px;
+}
+
+.day-card {
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ece2ff;
+}
+
+.day-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.day-top h2 {
+  color: #5a189a;
+}
+
+.edit-menu-btn {
+  border: none;
+  background: linear-gradient(
+    135deg,
+    #9d4edd,
+    #7b2cbf
+  );
+  color: white;
+  padding: 10px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.meal-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(4, 1fr);
+  gap: 15px;
+}
+
+.meal {
+  padding: 15px;
+  border-radius: 14px;
+}
+
+.breakfast {
+  background: #fff7e8;
+  border: 1px solid #ffd36d;
+}
+
+.lunch {
+  background: #eff6ff;
+  border: 1px solid #93c5fd;
+}
+
+.snack {
+  background: #faf0ff;
+  border: 1px solid #d8b4fe;
+}
+
+.meal h4 {
+  margin-bottom: 8px;
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.4);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.food-modal {
+  background: white;
+  width: 600px;
+  padding: 25px;
+  border-radius: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  margin-bottom: 6px;
+  font-weight: 700;
+}
+
+.form-group input {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.cancel-btn {
+  background: #ececec;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+}
+
+.save-btn {
+  background: linear-gradient(
+    135deg,
+    #9d4edd,
+    #7b2cbf
+  );
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+}

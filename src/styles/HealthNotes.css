@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+
+:root {
+  --purple-dark: #5a189a;
+  --purple-main: #7b2cbf;
+  --purple-light: #9d4edd;
+  --lavender: #e0c3fc;
+  --bg-light: #f5f0ff;
+  --card-bg: #ffffff;
+}
+
+.dashboard-wrapper {
+  display: flex;
+  font-family: 'Nunito', sans-serif;
+  background-color: var(--bg-light);
+  min-height: 100vh;
+}
+
+/* MAIN LAYOUT */
+.main-content {
+  margin-left: 240px;
+  padding: 32px 36px;
+  flex: 1;
+}
+
+/* HEADER */
+.hn-header {
+  margin-bottom: 24px;
+}
+
+.hn-title {
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--purple-dark);
+  margin: 0 0 4px;
+}
+
+.hn-subtitle {
+  color: #888;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* SELECTOR */
+.hn-selector-wrap {
+  background: white;
+  border-radius: 14px;
+  padding: 16px 20px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 10px rgba(123, 44, 191, 0.07);
+}
+
+.hn-selector-label {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  color: #888;
+  margin-bottom: 8px;
+}
+
+.hn-selector {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1.5px solid #e8d5ff;
+  border-radius: 10px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 15px;
+  color: #333;
+  background: white;
+  outline: none;
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%239d4edd' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+}
+
+.hn-selector:focus {
+  border-color: var(--purple-light);
+}
+
+/* GRID */
+.hn-grid {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+/* PROFILE CARD */
+.hn-profile-card {
+  background: white;
+  border-radius: 18px;
+  padding: 28px 20px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(123, 44, 191, 0.08);
+}
+
+.hn-avatar {
+  font-size: 56px;
+  background: linear-gradient(135deg, #c77dff, #7b2cbf);
+  border-radius: 20px;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 14px;
+}
+
+.hn-child-name {
+  font-size: 18px;
+  font-weight: 800;
+  color: #2d2d2d;
+  margin: 0 0 4px;
+}
+
+.hn-child-age {
+  font-size: 13px;
+  color: #999;
+  margin: 0 0 12px;
+}
+
+.hn-status-badge {
+  display: inline-block;
+  background: #e8fff0;
+  color: #22c55e;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 5px 14px;
+  border-radius: 20px;
+  border: 1px solid #bbf7d0;
+}
+
+/* VITALS */
+.hn-vitals {
+  margin-top: 24px;
+  text-align: left;
+}
+
+.hn-vital-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #f3e8ff;
+}
+
+.hn-vital-item:last-child {
+  border-bottom: none;
+}
+
+.hn-vital-label {
+  font-size: 12px;
+  color: #aaa;
+  font-weight: 600;
+}
+
+.hn-vital-value {
+  font-size: 14px;
+  font-weight: 700;
+  color: #333;
+}
+
+/* RIGHT SIDE */
+.hn-details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hn-card {
+  background: white;
+  border-radius: 16px;
+  padding: 22px;
+  box-shadow: 0 2px 10px rgba(123, 44, 191, 0.07);
+}
+
+.hn-card-title {
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--purple-dark);
+  margin: 0 0 16px;
+}
+
+/* ALLERGIES */
+.hn-allergy-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.hn-allergy-critical {
+  background: #fff5f5;
+  border: 1px solid #fecaca;
+}
+
+.hn-allergy-moderate {
+  background: #fffbeb;
+  border: 1px solid #fde68a;
+}
+
+.hn-allergy-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: #333;
+}
+
+.hn-allergy-note {
+  font-size: 12px;
+  color: #999;
+  margin-top: 2px;
+}
+
+.hn-badge {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+.hn-badge-critical {
+  background: #ef4444;
+  color: white;
+}
+
+.hn-badge-moderate {
+  background: #f59e0b;
+  color: white;
+}
+
+/* MEDICATIONS */
+.hn-med-item {
+  background: #f0f4ff;
+  border-radius: 10px;
+  padding: 14px 16px;
+  border: 1px solid #dbeafe;
+}
+
+.hn-med-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: #2563eb;
+}
+
+.hn-med-note {
+  font-size: 12px;
+  color: #3b82f6;
+  margin-top: 3px;
+}
+
+.hn-med-available {
+  font-size: 12px;
+  color: #60a5fa;
+  margin-top: 4px;
+}
+
+/* CONTACTS */
+.hn-contacts-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.hn-contact-role {
+  font-size: 11px;
+  font-weight: 700;
+  color: #bbb;
+  text-transform: uppercase;
+  margin-bottom: 3px;
+}
+
+.hn-contact-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: #333;
+}
+
+.hn-contact-phone {
+  font-size: 13px;
+  color: var(--purple-light);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.hn-contact-phone:hover {
+  text-decoration: underline;
+}
